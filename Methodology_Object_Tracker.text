@@ -1,0 +1,16 @@
+Methodology:
+Video Loading: Load the video file using OpenCV's VideoCapture function.
+Tracker Initialization: Define a tracker using OpenCV's TrackerCSRT_create function.
+Object Selection: Select the object to track (e.g., the ball) using OpenCV's selectROI function.
+Tracker Setup: Initialize the tracker with the first frame and the selected bounding box.
+Tracking and Visualization: Read frames from the video, update the tracker, draw the bounding box, and append the center coordinates to the trajectory list.
+Display and Exit: Display the frames and exit on key press.
+Key Assumptions:
+The object's movement is smooth and continuous.
+The object does not occlude or interact with other objects.
+Implementation Note:
+This code utilizes the CSRT (Channel and Spatial Reliability Tracking) algorithm, which is robust to changes in object size, orientation, and color.
+Feel free to experiment with alternative tracking algorithms (e.g., KCF, MIL, TLD) for enhanced performance.
+Submission Requirements:
+Please attach a sample output video/image to the email, if applicable.
+

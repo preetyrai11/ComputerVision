@@ -1,0 +1,13 @@
+Methodology:
+Rectangle Detection: We utilize contour detection to identify rectangles within the image. Our detect_rectangles function refines the results by excluding small contours and approximating quadrilateral shapes.
+IoU Calculation: The calculate_iou function determines the Intersection over Union (IoU) between two rectangles by leveraging contour areas and bitwise operations.
+Perspective Correction: Our correct_perspective function applies a perspective transformation to rectify the rectangle's orientation, converting it to a top-down view. This is achieved using OpenCV's getPerspectiveTransform and warpPerspective functions.
+Main Function: The main function orchestrates the process by reading the image, detecting rectangles, calculating IoU, correcting perspectives, and saving the corrected images.
+Key Assumptions:
+Rectangles are quadrilateral in shape with straight edges.
+Non-rectangular or occluded regions are disregarded.
+The image contains exactly two rectangles.
+Note: This implementation serves as a foundation and may require modifications to accommodate specific requirements or image characteristics.
+
+
+

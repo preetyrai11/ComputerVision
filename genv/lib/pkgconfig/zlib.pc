@@ -1,0 +1,13 @@
+prefix=/Users/preetyrai/assignment/genv
+exec_prefix=/Users/preetyrai/assignment/genv
+libdir=/Users/preetyrai/assignment/genv/lib
+sharedlibdir=/Users/preetyrai/assignment/genv/lib
+includedir=/Users/preetyrai/assignment/genv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

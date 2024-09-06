@@ -41,6 +41,7 @@ def correct_perspective(rectangle, image):
 
 def main():
     image = cv2.imread('rectanglesOverlap.png')
+    roi = cv2.selectROI(image) 
     rectangles = detect_rectangles(image)
     if len(rectangles) != 2:
         print("Exactly two rectangles expected.")
@@ -53,5 +54,5 @@ def main():
 
 if __name__ == '__main__':
     main()
-    
+
 
